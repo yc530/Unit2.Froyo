@@ -1,7 +1,7 @@
 const flavorPrompt =
 prompt("please enter your desired flavors seperated with commas in between!");
 
-const flavors = ["vanilla", "coffee", "strawberry"];
+// const flavors = ["vanilla", "coffee", "strawberry"];
 
 const orderedFroyo = {
     vanilla:3,
