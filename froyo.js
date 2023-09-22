@@ -16,6 +16,7 @@ for (const item of flavorInput) {
     }
 }
 
+console.table(desiredFlavor);
 
 
 
