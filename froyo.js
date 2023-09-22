@@ -4,7 +4,17 @@ console.log(flavorPrompt);
 const flavorInput = flavorPrompt.split(',');
 console.log("user inputted:", flavorInput);
 
-
+//(desiredFlavor[item]) << an item in the flavorInput array as referred to in line above (item of flavorInput).
+//if the flavors are recognized (written in more than once), the ++ is initializing it to count it.
+//however, if the flavor is 1 (new because it is not recognized or written in prompt more than once), count it as one.
+const desiredFlavor ={};
+for (const item of flavorInput) {
+    if (desiredFlavor[item]) {
+        desiredFlavor[item]++;
+    } else {
+        desiredFlavor[item] = 1;
+    }
+}
 
 
 
